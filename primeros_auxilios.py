@@ -29,7 +29,7 @@ def show_emergency_steps(emergency_type):
     elif emergency_type == 'quemadura':
         print("1. Enfriar la quemadura con agua corriente durante al menos 10 minutos.")
         print("2. Cubrir la quemadura con un apósito estéril.")
-        print("3. Buscar atención médica si la quemadura es grave grado.")
+        print("3. Buscar atención médica si la quemadura es grave.")
     elif emergency_type == 'paro cardíaco':
         print("1. Llama al 911.")
         print("2. Comienza la RCP (Resucitación Cardiopulmonar) inmediatamente.")

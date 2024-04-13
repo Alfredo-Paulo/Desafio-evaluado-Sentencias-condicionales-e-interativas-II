@@ -4,6 +4,12 @@
 # contraseña indicada. Deberá hacer este proceso letra por letra, de izquierda a derecha.
 
 from string import ascii_lowercase
+from pyfiglet import Figlet
+import pyfiglet
+
+def show_title():
+    f = Figlet(font='slant')
+    print(f.renderText('Fuerza Bruta !'))
 
 def fuerza_bruta(password):
     intentos = 0
@@ -13,12 +19,14 @@ def fuerza_bruta(password):
             intentos += 1
             if guess == letra:
                 encontrado = True
+                print(guess,intentos)
                 break
         if not encontrado:
             return -1  # Si una letra de la contraseña no se encuentra en ascii_lowercase, se devuelve -1
     return intentos
 
 def main():
+    show_title()
     password = input("Ingrese la contraseña: ").lower()  # Convertimos la contraseña a minúsculas
     intentos = fuerza_bruta(password)
     if intentos == -1:

@@ -1,3 +1,7 @@
+# Se solicita devolver un informe resumido que exponga los meses que superan un cierto
+# umbral. El programa mayor_a.py debe retornar un diccionario con el mes y el valor asociado
+# siempre y cuando superen el umbral especificado. 
+
 import sys
 
 ventas = {
